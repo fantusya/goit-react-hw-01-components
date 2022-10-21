@@ -1,29 +1,30 @@
 import PropTypes from 'prop-types';
+import { ProfileContainer, DescriptionContainer, AvatarImg, NameParagraph, TagParagraph, LocationParagraph, StatsList, StatsItem, LabelSpan, QuantitySpan } from './Profile.styled';
 
 export default function Profile({ userName, userTag, userLocation, userAvatar, followers, views, likes }) {
     return (
-        <div className="profile">
-            <div className="description">
-                <img src={userAvatar} alt="User avatar" className="avatar" />
-                <p className="name">{userName}</p>
-                <p className="tag">@{userTag}</p>
-                <p className="location">{userLocation}</p>
-            </div>
-            <ul className="stats">
-                <li>
-                    <span className="label">Followers</span>
-                    <span className="quantity">{followers}</span>
-                </li>
-                <li>
-                    <span className="label">Views</span>
-                    <span className="quantity">{views}</span>
-                </li>
-                <li>
-                    <span className="label">Likes</span>
-                    <span className="quantity">{likes}</span>
-                </li>
-            </ul>
-        </div>)
+        <ProfileContainer>
+            <DescriptionContainer>
+                <AvatarImg src={userAvatar} alt="User avatar"/>
+                <NameParagraph>{userName}</NameParagraph>
+                <TagParagraph>@{userTag}</TagParagraph>
+                <LocationParagraph>{userLocation}</LocationParagraph>
+            </DescriptionContainer>
+            <StatsList>
+                <StatsItem>
+                    <LabelSpan>Followers</LabelSpan>
+                    <QuantitySpan>{followers}</QuantitySpan>
+                </StatsItem>
+                <StatsItem>
+                    <LabelSpan>Views</LabelSpan>
+                    <QuantitySpan>{views}</QuantitySpan>
+                </StatsItem>
+                <StatsItem>
+                    <LabelSpan>Likes</LabelSpan>
+                    <QuantitySpan>{likes}</QuantitySpan>
+                </StatsItem>
+            </StatsList>
+        </ProfileContainer>)
 };
 
 Profile.propTypes = {

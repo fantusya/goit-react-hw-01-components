@@ -1,11 +1,12 @@
 import PropTypes from 'prop-types';
 import Profile from "./Profile";
+import { ProfileListUl, ProfileItem } from './ProfileList.styled';
 
 export default function ProfileList({ items }) {
     return (
-        <ul className="list">
+        <ProfileListUl>
           {items.map(item =>
-            <li key={item.tag}>
+            <ProfileItem key={item.tag}>
               <Profile
                 userName={item.username}
                 userTag={item.tag}
@@ -15,9 +16,9 @@ export default function ProfileList({ items }) {
                 views={item.stats.views}
                 likes={item.stats.likes}
               />
-            </li>)
+            </ProfileItem>)
           }
-        </ul>
+        </ProfileListUl>
     )
 };
 
