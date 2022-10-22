@@ -1,9 +1,10 @@
 import PropTypes from 'prop-types';
 import TransactionRow from './TransactionRow';
+import { TransactionTableBody } from './styles/TransactionList.styled';
 
 export default function TransactionList({ transactions }) {
     return (
-      <tbody>
+      <TransactionTableBody>
         {transactions.map(transaction =>
           <tr key={transaction.id}>
             <TransactionRow
@@ -13,7 +14,7 @@ export default function TransactionList({ transactions }) {
             />
           </tr>)
         }
-      </tbody>
+      </TransactionTableBody>
     )
 };
 

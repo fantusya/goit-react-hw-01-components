@@ -1,18 +1,19 @@
 import PropTypes from 'prop-types';
 import Statistics from './Statistics';
+import { StatisticsListUl, StatisticsItem } from './styles/StatisticsList.styled';
 
 export default function StatisticsList({ stats }) {
     return (
-      <ul className="stat-list list">
+      <StatisticsListUl>
         {stats.map(stat =>
-          <li key={stat.id}>
+          <StatisticsItem key={stat.id}>
             <Statistics
               fileExtension={stat.label}
               percentage={stat.percentage}
             />
-          </li>)
+          </StatisticsItem>)
         }
-      </ul>
+      </StatisticsListUl>
     )
 };
 

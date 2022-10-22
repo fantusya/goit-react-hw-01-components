@@ -20,7 +20,7 @@ export const AvatarImg = styled.img`
 export const NameParagraph = styled.p`
     font-size: 22px;
     font-weight: 700;
-    color: #000;
+    color: ${props => props.theme.colors.black};
 
     margin-bottom: 10px;
 `;
@@ -28,7 +28,7 @@ export const NameParagraph = styled.p`
 export const TagParagraph = styled.p`
     font-size: 16px;
     font-weight: 500;
-    color: gray;
+    color: ${props => props.theme.colors.gray};
 
     margin-bottom: 10px;
 `;
@@ -36,7 +36,7 @@ export const TagParagraph = styled.p`
 export const LocationParagraph = styled.p`
     font-size: 16px;
     font-weight: 500;
-    color: gray;
+    color: ${props => props.theme.colors.gray};
 `;
 
 export const StatsList = styled.ul`
@@ -44,7 +44,7 @@ export const StatsList = styled.ul`
     margin: 0;
     padding: 0;
     display: flex;
-    background-color: #f5f3f3;
+    background-color: ${props => props.theme.colors.statsBackground};
 `;
 
 export const StatsItem = styled.li`
@@ -52,14 +52,14 @@ export const StatsItem = styled.li`
     flex-direction: column;
     gap: 5px;
     padding: 15px;
-    border: 1px solid gray;
-    width: 83px;
+    outline: ${props => `1px solid ${props.theme.colors.gray}`};
+    width: calc(100% / 2);
 `;
 
 export const LabelSpan = styled.span`
     font-size: 13px;
     font-weight: 500;
-    color: gray;
+    color: ${props => props.theme.colors.gray};
 `;
 
 export const QuantitySpan = styled.span`

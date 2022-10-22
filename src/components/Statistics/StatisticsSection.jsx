@@ -1,14 +1,15 @@
 import PropTypes from 'prop-types';
+import { StatisticsContainer, StatisticsTitle } from './styles/StatisticsSection.styled';
 
 export default function StatisticsSection({ title, children }) {
     return (
-      <div>
-        {title && <h2>{title}</h2>}
+      <StatisticsContainer>
+        {title && <StatisticsTitle>{title}</StatisticsTitle>}
         {children}
-      </div>
+      </StatisticsContainer>
     )
 };
 
 StatisticsSection.propTypes = {
-    title: PropTypes.string,
+  title: PropTypes.string,
 }

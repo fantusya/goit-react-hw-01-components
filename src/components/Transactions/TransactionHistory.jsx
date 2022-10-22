@@ -1,14 +1,18 @@
+import { TransactionContainer, TransactionTable, TransactionTableHead } from "./styles/TransactionHistory.styled"
+
 export default function TransactionHistory({ children }) {
-    return (
-      <table className="transaction-history">
-        <thead>
-          <tr>
-            <th>Type</th>
-            <th>Amount</th>
-            <th>Currency</th>
-          </tr>
-        </thead>
-        {children}
-      </table>
+  return (
+      <TransactionContainer>
+        <TransactionTable>
+          <TransactionTableHead>
+            <tr>
+              <th>Type</th>
+              <th>Amount</th>
+              <th>Currency</th>
+            </tr>
+          </TransactionTableHead>
+          {children}
+        </TransactionTable>
+      </TransactionContainer>
     )
 };
