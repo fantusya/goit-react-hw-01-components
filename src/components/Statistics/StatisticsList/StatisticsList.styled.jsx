@@ -1,4 +1,4 @@
-import styled from "@emotion/styled";
+import styled from "styled-components";
 
 export const StatisticsListUl = styled.ul`
     display: flex;
@@ -10,7 +10,7 @@ export const StatisticsListUl = styled.ul`
 export const StatisticsItem = styled.li`
     display: flex;
     flex-direction: column;
-    aligh-items: center;
+    align-items: center;
     gap: 5px;
     padding: 15px;
     width: calc(100% / 5);

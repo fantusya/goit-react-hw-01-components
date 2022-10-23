@@ -1,5 +1,5 @@
 import PropTypes from 'prop-types';
-import { ProfileContainer, DescriptionContainer, AvatarImg, NameParagraph, TagParagraph, LocationParagraph, StatsList, StatsItem, LabelSpan, QuantitySpan } from './styles/Profile.styled';
+import { ProfileContainer, DescriptionContainer, AvatarImg, NameParagraph, TagParagraph, LocationParagraph, StatsList, StatsItem, LabelSpan, QuantitySpan } from './Profile.styled';
 
 export default function Profile({ userName, userTag, userLocation, userAvatar, followers, views, likes }) {
     return (

@@ -1,5 +1,5 @@
 import PropTypes from 'prop-types';
-import { StatisticsContainer, StatisticsTitle } from './styles/StatisticsSection.styled';
+import { StatisticsContainer, StatisticsTitle } from './StatisticsSection.styled';
 
 export default function StatisticsSection({ title, children }) {
     return (

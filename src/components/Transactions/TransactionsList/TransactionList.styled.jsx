@@ -1,4 +1,4 @@
-import styled from "@emotion/styled";
+import styled from "styled-components";
 
 export const TransactionTableBody = styled.tbody`
    color: ${props => props.theme.colors.gray};

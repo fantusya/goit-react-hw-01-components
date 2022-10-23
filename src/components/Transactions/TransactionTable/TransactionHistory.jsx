@@ -1,4 +1,4 @@
-import { TransactionContainer, TransactionTable, TransactionTableHead } from "./styles/TransactionHistory.styled"
+import { TransactionContainer, TransactionTable, TransactionTableHead } from "./TransactionHistory.styled"
 
 export default function TransactionHistory({ children }) {
   return (

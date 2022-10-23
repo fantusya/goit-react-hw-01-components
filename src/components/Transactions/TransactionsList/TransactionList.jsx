@@ -1,6 +1,6 @@
 import PropTypes from 'prop-types';
-import TransactionRow from './TransactionRow';
-import { TransactionTableBody } from './styles/TransactionList.styled';
+import TransactionRow from '../TransactionRow/TransactionRow';
+import { TransactionTableBody } from './TransactionList.styled';
 
 export default function TransactionList({ transactions }) {
     return (
