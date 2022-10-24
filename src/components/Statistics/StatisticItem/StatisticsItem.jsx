@@ -1,5 +1,5 @@
 import PropTypes from 'prop-types';
-import { LabelSpan, PercentageSpan } from './Statistics.styled';
+import { LabelSpan, PercentageSpan } from './StatisticsItem.styled';
 
 export default function Statistics({ fileExtension, percentage }) {
     return (

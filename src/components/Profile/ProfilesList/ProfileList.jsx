@@ -1,5 +1,5 @@
 import PropTypes from 'prop-types';
-import Profile from "../PtofileItem/Profile";
+import Profile from "../PtofileItem/ProfileItem";
 import {ProfileContainer, ProfileListUl, ProfileItem } from './ProfileList.styled';
 
 export default function ProfileList({ items }) {

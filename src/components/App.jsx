@@ -8,7 +8,7 @@ import statisticsData from '../data/data';
 import FriendList from "./Friends/FriendsList/FriendList";
 import friendsData from '../data/friends';
 
-import TransactionHistory from "./Transactions/TransactionTable/TransactionHistory";
+import TransactionHistory from "./Transactions/TransactionTable/TransactionTable";
 import TransactionList from "./Transactions/TransactionsList/TransactionList";
 import transactionsData from "../data/transactions";
 
